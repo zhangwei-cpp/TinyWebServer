@@ -1,3 +1,5 @@
+G
+:q
 
 
 TinyWebServer
@@ -66,6 +68,10 @@ Demo演示
 <div align=center><img src="http://ww1.sinaimg.cn/large/005TJ2c7ly1ge0jtxie8ng30go07xb2b.gif" height="429"/> </div>
 
 
+压力测试
+-------------
+压力测试
+-------------
 压力测试
 -------------
 在关闭日志后，使用Webbench对服务器进行压力测试，对listenfd和connfd分别采用ET和LT模式，均可实现上万的并发连接，下面列出的是两者组合后的测试结果. 
@@ -174,10 +180,6 @@ Demo演示
     ./server
     ```
 
-* 浏览器端
-
-    ```C++
-    ip:9006
     ```
 
 个性化运行
@@ -202,8 +204,7 @@ Demo演示
 * -o，优雅关闭连接，默认不使用
 	* 0，不使用
 	* 1，使用
-* -s，数据库连接数量
-	* 默认为8
+* -s，数据库连接数量	* 默认为8
 * -t，线程数量
 	* 默认为8
 * -c，关闭日志，默认打开
@@ -256,9 +257,13 @@ CPP11实现
 ------------
 更简洁，更优雅的CPP11实现：[Webserver](https://github.com/markparticle/WebServer)
 
+## 我的学习记录
+- 2026.04.14：成功在 Ubuntu 上编译并运行 TinyWebServer 项目。
+- 修改了数据库配置，适配本地 MySQL 环境。
+- 下一步计划：分析线程池和 epoll 的核心代码。
 
 致谢
 ------------
 Linux高性能服务器编程，游双著.
 
-感谢以下朋友的PR和帮助: [@RownH](https://github.com/RownH)，[@mapleFU](https://github.com/mapleFU)，[@ZWiley](https://github.com/ZWiley)，[@zjuHong](https://github.com/zjuHong)，[@mamil](https://github.com/mamil)，[@byfate](https://github.com/byfate)，[@MaJun827](https://github.com/MaJun827)，[@BBLiu-coder](https://github.com/BBLiu-coder)，[@smoky96](https://github.com/smoky96)，[@yfBong](https://github.com/yfBong)，[@liuwuyao](https://github.com/liuwuyao)，[@Huixxi](https://github.com/Huixxi)，[@markparticle](https://github.com/markparticle)，[@blogg9ggg](https://github.com/Blogg9ggg).
+感谢以下朋友的PR和帮:助: [@RownH](https://github.com/RownH)，[@mapleFU](https://github.com/mapleFU)，[@ZWiley](https://github.com/ZWiley)，[@zjuHong](https://github.com/zjuHong)，[@mamil](https://github.com/mamil)，[@byfate](https://github.com/byfate)，[@MaJun827](https://github.com/MaJun827)，[@BBLiu-coder](https://github.com/BBLiu-coder)，[@smoky96](https://github.com/smoky96)，[@yfBong](https://github.com/yfBong)，[@liuwuyao](https://github.com/liuwuyao)，[@Huixxi](https://github.com/Huixxi)，[@markparticle](https://github.com/markparticle)，[@blogg9ggg](https://github.com/Blogg9ggg).
